@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.1.7.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.dyl</groupId>
+	<artifactId>springdubbo</artifactId>
+	<version>1.0</version>
+	<name>springdubbo</name>
+	<packaging>pom</packaging>
+	<description>Demo project for Spring Boot</description>
+
+	<properties>
+		<java.version>1.8</java.version>
+		<maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
+	</properties>
+
+	<modules>
+		<module>dubbo-api</module>
+		<module>dubbo-provider</module>
+		<module>dubbo-consumer</module>
+		<module>dubbo-web</module>
+	</modules>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-web</artifactId>
+			</dependency>
+
+			<!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo-spring-boot-starter -->
+			<!--<dependency>
+				<groupId>com.alibaba.spring.boot</groupId>
+				<artifactId>dubbo-spring-boot-starter</artifactId>
+				<version>1.</version>
+			</dependency>-->
+
+			<!-- https://mvnrepository.com/artifact/com.alibaba.boot/dubbo-spring-boot-starter -->
+			<!--<dependency>
+				<groupId>com.alibaba.boot</groupId>
+				<artifactId>dubbo-spring-boot-starter</artifactId>
+				<version>0.2.0</version>
+			</dependency>-->
+
+			<!-- https://mvnrepository.com/artifact/io.dubbo.springboot/spring-boot-starter-dubbo -->
+			<dependency>
+				<groupId>io.dubbo.springboot</groupId>
+				<artifactId>spring-boot-starter-dubbo</artifactId>
+				<version>1.0.0</version>
+			</dependency>
+
+			<!-- https://mvnrepository.com/artifact/org.apache.zookeeper/zookeeper -->
+			<dependency>
+				<groupId>org.apache.zookeeper</groupId>
+				<artifactId>zookeeper</artifactId>
+				<version>3.5.5</version>
+			</dependency>
+
+			<!-- zookeeper client依赖 -->
+			<!--<dependency>
+				<groupId>com.101tec</groupId>
+				<artifactId>zkclient</artifactId>
+				<version>0.10</version>
+			</dependency>-->
+		</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
