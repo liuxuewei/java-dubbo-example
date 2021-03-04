@@ -1,4 +1,4 @@
-package com.dyl.dubbo.api.service;
+package com.dll.dubbo.api.service;
 
 public interface AnnotationService {
 

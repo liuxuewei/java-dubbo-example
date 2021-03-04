@@ -1,7 +1,7 @@
-package com.dyl.dubbo.provider.impl;
+package com.dll.dubbo.provider.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
-import com.dyl.dubbo.api.service.AnnotationService;
+import com.dll.dubbo.api.service.AnnotationService;
 import org.springframework.stereotype.Component;
 
 @Component

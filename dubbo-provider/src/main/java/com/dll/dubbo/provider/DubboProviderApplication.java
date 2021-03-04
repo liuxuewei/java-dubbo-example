@@ -1,13 +1,12 @@
-package com.dyl.dubbo.api;
+package com.dll.dubbo.provider;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DubboApiApplication {
-
+public class DubboProviderApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(DubboApiApplication.class, args);
+		SpringApplication.run(DubboProviderApplication.class, args);
 	}
 
 }
